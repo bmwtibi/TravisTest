@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.5.1)
+  - CryptoSwift (0.8.0)
+  - MKDropdownMenu (1.4)
+  - SwiftMessages (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - CryptoSwift
+  - MKDropdownMenu
+  - SwiftMessages
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CryptoSwift
+    - MKDropdownMenu
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
+  MKDropdownMenu: 269df4a41d21a1db684ce8bc709befe419fc5bae
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
+
+PODFILE CHECKSUM: fb9dc9beb4785cad487b918ac2fcbcf5ba1329f2
+
+COCOAPODS: 1.5.0

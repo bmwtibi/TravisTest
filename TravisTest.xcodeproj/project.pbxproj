@@ -14,6 +14,7 @@
 		0349E7132077C35300945214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0349E7122077C35300945214 /* Assets.xcassets */; };
 		0349E7162077C35300945214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0349E7142077C35300945214 /* LaunchScreen.storyboard */; };
 		0349E7212077C35300945214 /* TravisTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349E7202077C35300945214 /* TravisTestTests.swift */; };
+		DE61BB9698B09B83236D946D /* Pods_TravisTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1CD656980244D3568AFF4 /* Pods_TravisTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		0349E71C2077C35300945214 /* TravisTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0349E7202077C35300945214 /* TravisTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisTestTests.swift; sourceTree = "<group>"; };
 		0349E7222077C35300945214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD1CD656980244D3568AFF4 /* Pods_TravisTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3A718C26C8080BAB2BD5D2 /* Pods-TravisTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisTest/Pods-TravisTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C1FD83147DD3924A61B56D0D /* Pods-TravisTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravisTest/Pods-TravisTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE61BB9698B09B83236D946D /* Pods_TravisTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				0349E7072077C35200945214 /* TravisTest */,
 				0349E71F2077C35300945214 /* TravisTestTests */,
 				0349E7062077C35200945214 /* Products */,
+				2D2B1051F6612161C3DB19B9 /* Pods */,
+				434C388A4206E9E6CC135B52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,23 @@
 			path = TravisTestTests;
 			sourceTree = "<group>";
 		};
+		2D2B1051F6612161C3DB19B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A718C26C8080BAB2BD5D2 /* Pods-TravisTest.debug.xcconfig */,
+				C1FD83147DD3924A61B56D0D /* Pods-TravisTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		434C388A4206E9E6CC135B52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DD1CD656980244D3568AFF4 /* Pods_TravisTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0349E7252077C35300945214 /* Build configuration list for PBXNativeTarget "TravisTest" */;
 			buildPhases = (
+				B5537F8D6E37E42FEEB21395 /* [CP] Check Pods Manifest.lock */,
 				0349E7012077C35200945214 /* Sources */,
 				0349E7022077C35200945214 /* Frameworks */,
 				0349E7032077C35200945214 /* Resources */,
+				71FC1FFF0D90DAD298EB08B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +220,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71FC1FFF0D90DAD298EB08B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravisTest/Pods-TravisTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MKDropdownMenu/MKDropdownMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKDropdownMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravisTest/Pods-TravisTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5537F8D6E37E42FEEB21395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravisTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0349E7012077C35200945214 /* Sources */ = {
@@ -360,17 +431,21 @@
 		};
 		0349E7262077C35300945214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3A718C26C8080BAB2BD5D2 /* Pods-TravisTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MS7GE5K8QT;
 				INFOPLIST_FILE = TravisTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hu.softdekor.TravisTest;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.softdekor.travistest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4ac7b272-e349-4942-9cde-09b8adf1aec5";
+				PROVISIONING_PROFILE_SPECIFIER = "Travis Test Dev";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,17 +453,22 @@
 		};
 		0349E7272077C35300945214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FD83147DD3924A61B56D0D /* Pods-TravisTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MS7GE5K8QT;
 				INFOPLIST_FILE = TravisTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hu.softdekor.TravisTest;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.softdekor.travistest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92aceefd-4da9-414f-b920-29399a0aab34";
+				PROVISIONING_PROFILE_SPECIFIER = "Travis Test Adhoc";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
