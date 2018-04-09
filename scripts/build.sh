@@ -9,6 +9,8 @@ mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles/
 cp "./scripts/certs/dev.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
 cp "./scripts/certs/adhoc.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
 
+ls
+
 xcrun xcodebuild -project TravisTest.xcworkspace -scheme TravisTest -archivePath TravisTest.xcarchive archive
 
 xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath . -exportOptionsPlist "./scripts/certs/DevExportOptions.plist"

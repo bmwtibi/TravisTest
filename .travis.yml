@@ -3,6 +3,8 @@ osx_image: xcode9.3
 xcode_project: TravisTest.xcworkspace
 xcode_scheme: TravisTest
 podfile: Podfile
+before_install:
+- pod install
 before_script:
 - ./scripts/decrypt-cert.sh
 - ./scripts/add-key.sh
