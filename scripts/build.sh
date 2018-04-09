@@ -11,7 +11,7 @@ cp "./scripts/certs/adhoc.mobileprovision" ~/Library/MobileDevice/Provisioning\ 
 
 ls
 
-xcrun xcodebuild -project TravisTest.xcworkspace -scheme TravisTest -archivePath TravisTest.xcarchive archive
+xcrun xcodebuild -project TravisTest.xcodeproj -scheme TravisTest -archivePath TravisTest.xcarchive archive
 
 xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath . -exportOptionsPlist "./scripts/certs/DevExportOptions.plist"
 

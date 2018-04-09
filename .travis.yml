@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode9.3
-xcode_project: TravisTest.xcworkspace
+xcode_project: TravisTest.xcodeproj
 xcode_scheme: TravisTest
 podfile: Podfile
 before_install:
