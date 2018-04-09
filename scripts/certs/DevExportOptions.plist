@@ -5,5 +5,16 @@
 <dict>
 	<key>method</key>
 	<string>development</string>
+	<key>provisioningProfiles</key>
+    <dict>
+    	<key>hu.softdekor.travistest</key>
+        <string>4ac7b272-e349-4942-9cde-09b8adf1aec5</string>
+    </dict>
+    <key>signingCertificate</key>
+    <string>iPhone Developer: Tibor Gore (5666T4K54G)</string>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>teamID</key>
+    <string>MS7GE5K8QT</string>
 </dict>
 </plist>

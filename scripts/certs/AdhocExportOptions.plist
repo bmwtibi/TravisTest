@@ -5,5 +5,16 @@
 <dict>
 	<key>method</key>
 	<string>ad-hoc</string>
+	<key>provisioningProfiles</key>
+    <dict>
+    	<key>hu.softdekor.travistest</key>
+        <string>92aceefd-4da9-414f-b920-29399a0aab34</string>
+    </dict>
+    <key>signingCertificate</key>
+    <string>iOS Distribution</string>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>teamID</key>
+    <string>MS7GE5K8QT</string>
 </dict>
 </plist>

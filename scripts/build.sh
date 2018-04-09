@@ -13,6 +13,9 @@ ls
 
 xcrun xcodebuild -workspace TravisTest.xcworkspace -scheme TravisTest -archivePath TravisTest.xcarchive archive
 
-xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath . -exportOptionsPlist "./scripts/certs/DevExportOptions.plist"
+xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath Ipas/Dev -exportOptionsPlist "./scripts/certs/DevExportOptions.plist"
 
-xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath . -exportOptionsPlist "./scripts/certs/AdhocExportOptions.plist"
+xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath Ipas/Adhoc -exportOptionsPlist "./scripts/certs/AdhocExportOptions.plist"
+
+mv Ipas/Dev/TravisTest.ipa ./TravisTest-Dev.ipa
+mv Ipas/Adhoc/TravisTest.ipa ./TravisTest-Adhoc.ipa
