@@ -1,0 +1,22 @@
+language: objective-c
+osx_image: xcode9.2
+xcode_project: TravisTest.xcworkspace
+xcode_scheme: TravisTest
+podfile: Podfile
+before_script:
+- ./scripts/decrypt-cert.sh
+- ./scripts/add-key.sh
+script:
+- ./scripts/build.sh
+after_script:
+- ./scripts/remove-key.sh
+deploy:
+      provider: releases
+      prerelease: true
+      skip_cleanup: true
+      file_glob: true
+      github-token: $GIT_TOKEN
+      file: "*.ipa"
+      keep-history: true
+      on:
+        branch: master
