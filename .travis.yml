@@ -10,6 +10,7 @@ before_script:
 - ./scripts/add-key.sh
 - gem install CFPropertyList
 - gem install sqlite3
+- gem install digest
 script:
 - ./scripts/build.sh
 after_script:
