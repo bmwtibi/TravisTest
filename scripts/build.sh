@@ -11,9 +11,9 @@ mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles/
 cp "./scripts/certs/adhoc.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
 
 
-echo "----------xcodebuild -showBuildSettings-----------"
-xcodebuild -showBuildSettings
-echo "--------------------------------------------------"
+# echo "----------xcodebuild -showBuildSettings-----------"
+# xcodebuild -showBuildSettings
+# echo "--------------------------------------------------"
 
 echo "----------No Acrhive-----------"
 ls
@@ -58,14 +58,14 @@ set -x          # echoes commands
 
 
 
-xcrun xcodebuild -workspace TravisTest.xcworkspace -scheme TravisTest -archivePath TravisTest.xcarchive archive
+xcodebuild -workspace TravisTest.xcworkspace -scheme TravisTest -archivePath TravisTest.xcarchive archive
 
 ls
 echo "----------Acrhive-----------"
 
 #xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath Ipas/Dev -exportOptionsPlist "./scripts/certs/DevExportOptions.plist"
 
-xcrun xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath Ipas/Adhoc -exportOptionsPlist "./scripts/certs/AdhocExportOptions.plist"
+xcodebuild -exportArchive -archivePath TravisTest.xcarchive -exportPath Ipas/Adhoc -exportOptionsPlist "./scripts/certs/AdhocExportOptions.plist"
 
 
 #mv Ipas/Dev/TravisTest.ipa ./TravisTest-Dev.ipa
