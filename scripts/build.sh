@@ -16,7 +16,6 @@ xcodebuild -showBuildSettings
 echo "--------------------------------------------------"
 
 echo "----------No Acrhive-----------"
-cd $SYSTEM_DEVELOPER_UTILITIES_DIR
 ls
 
 echo "----------Acrhive Settings-----------"
