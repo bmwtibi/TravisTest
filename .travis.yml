@@ -8,6 +8,8 @@ before_install:
 before_script:
 - ./scripts/decrypt-cert.sh
 - ./scripts/add-key.sh
+- gem install CFPropertyList
+- gem install sqlite3
 script:
 - ./scripts/build.sh
 after_script:
