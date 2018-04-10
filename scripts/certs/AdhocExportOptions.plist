@@ -8,7 +8,7 @@
 	<string>ad-hoc</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>hu.softdekor.travistest</key>
+		<key>MS7GE5K8QT.hu.softdekor.travistest</key>
 		<string>Travis Test Adhoc</string>
 	</dict>
 	<key>signingCertificate</key>
