@@ -16,12 +16,13 @@ script:
 after_script:
 - ./scripts/remove-key.sh
 deploy:
-      provider: releases
-      prerelease: true
-      skip_cleanup: true
-      file_glob: true
-      github-token: $GIT_TOKEN
-      file: "*.ipa"
-      keep-history: true
-      on:
-        branch: master
+  provider: releases
+  prerelease: true
+  skip_cleanup: true
+  file_glob: true
+  keep-history: true
+  api_key:
+    secure: qFWVheJ1s3GlPnPFPYboxAY6kwC3+zuo6s9zCDEk1s6FGtvMINEbWPvo+T2k+PyyLKsg/SCBYlt2zZUY9sYkeXg5NbxTUfhWOYUA5j0PbloVRq22uCa64mojgI0oNnx1C9NSti+QDtf9eNhlYbU1nEIlkDbVdZKuaR+/wo7lUsiNPs63Oq/6h434uJLphCGyvGmKeuAMAU6SFujaczuwFyaPMZSUjOOu/dO+PCavfqDkm58gvP5IQQcNE8SJaQuSSsLhjAmImOFq4WkpoDLrLvi6ZllF+MlfIe7staUTug/dAvmZrvjP4gK74Tj+bUgqNsbmyfph8IQU5nqaIMHlWDvURB25piOVxhZfF4T+W30KLn2PcpzPzCr2DCfrglZijIoUPMyQSyvIhPhkfCr0c57yEKa+1lM18QdXOuwIeF4opeNKiqzf85XrqXn0gvqbUJIWVDml2F86411oX76g/7TdzVjJFyk80IKCD5KphmYtuHV9CO7OLpwr3zpNo0UAd9O85C4KoUMSxrFd2ptVDecVPaB7mfgUbsHGcXKUE1Bv2iiVDr4RIutPtmTRh8Mtf1uVn3cE0qnfxHlAxuKNXE34/gufmHHZkokZqMU+BQaqP5eiIaUKJu/vQwCrtSa08AIAkBMwyVFa0EI2DMKGbRK+yFHsEkV7ChA20mxSUvw=
+  file: "*.ipa"
+  on:
+    repo: bmwtibi/TravisTest
