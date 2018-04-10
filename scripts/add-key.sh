@@ -21,6 +21,6 @@ security import ./scripts/certs/dist_private.p12 -k ~/Library/Keychains/$IOS_KEY
 
 security import ./scripts/certs/apple.cer -k ~/Library/Keychains/$IOS_KEYCHAIN_NAME -A
 
-security set-key-partition-list -S apple-tool:,apple: -s -k $IOS_KEYCHAIN_PWD ~/Library/Keychains/$IOS_KEYCHAIN_NAME
+security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k $IOS_KEYCHAIN_PWD ~/Library/Keychains/$IOS_KEYCHAIN_NAME
 
 security find-identity -v

@@ -434,6 +434,7 @@
 			baseConfigurationReference = AD3A718C26C8080BAB2BD5D2 /* Pods-TravisTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MS7GE5K8QT;
 				INFOPLIST_FILE = TravisTest/Info.plist;
